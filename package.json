@@ -1,9 +1,9 @@
 {
-  "name": "rollup-plugin-local-resolve",
-  "version": "1.0.7",
+  "name": "rollup-plugin-local-resolving",
+  "version": "1.1.0",
   "description": "Resolves index.js files with Rollup",
-  "main": "dist/rollup-plugin-local-resolve.js",
-  "jsnext:main": "dist/rollup-plugin-local-resolve.es2015.js",
+  "main": "dist/rollup-plugin-local-resolving.js",
+  "jsnext:main": "dist/rollup-plugin-local-resolving.es2015.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup-babel-lib-bundler -f cjs,es6 src/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frostney/rollup-plugin-local-resolve.git"
+    "url": "git+https://github.com/lakebeach/rollup-plugin-local-resolve.git"
   },
   "keywords": [
     "rollup",
@@ -28,22 +28,25 @@
     "dist",
     "src"
   ],
-  "author": "Johannes Stein",
+  "author": "Magnus Sjöstrand",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frostney/rollup-plugin-local-resolve/issues"
+    "url": "https://github.com/lakebeach/rollup-plugin-local-resolving/issues"
   },
-  "homepage": "https://github.com/frostney/rollup-plugin-local-resolve#readme",
+  "homepage": "https://github.com/lakebeach/rollup-plugin-local-resolving#readme",
   "devDependencies": {
-    "ava": "^0.12.0",
+    "ava": "^0.25.0",
     "babel-preset-es2015-loose-rollup": "^7.0.0",
-    "coveralls": "^2.11.8",
-    "eslint": "^2.2.0",
-    "eslint-config-airbnb": "^6.0.2",
-    "npm-run-all": "^1.5.1",
-    "nyc": "^5.6.0",
-    "rimraf": "^2.5.2",
-    "rollup": "^0.25.4",
-    "rollup-babel-lib-bundler": "^2.2.4"
+    "coveralls": "^3.0.2",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "npm-run-all": "^4.1.3",
+    "nyc": "^12.0.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.62.0",
+    "rollup-babel-lib-bundler": "^3.1.0"
   }
 }
