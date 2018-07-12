@@ -4,7 +4,6 @@ import path from 'path';
 export default function localResolver(options = { extensions: ['.js'] }) {
   return {
     resolveId(importee, importer) {
-      console.log(importee, importer);
       if (importee.indexOf('./') === -1) {
         return null;
       }
